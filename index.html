@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Mtg.css" rel="stylesheet">
+    <title>Magic: The Gathering</title>
+</head>
+<body>
+    <nav id="navbar">
+        <img src="" id="logo" />
+    </nav>
+    <h2>Welcome to Magic the Gathering</h2>
+    <div id="navigation">
+        <button onclick="prevPage()" id="prevBtn">Previous</button>
+        <button onclick="nextPage()" id="nextBtn">Next</button>
+        <input id="pageFinder" name="pageFinder" type="text", placeholder="search card">
+        <button onclick="goPage(pageFinder.value)">Go</button>
+    </div>
+    <div id="card-container"></div>
+    <div id="navigation2">
+        <button onclick="prevPage()" id="prev2Btn">Prev</button>
+        <button onclick="nextPage()" id="next2Btn">Next</button>
+    </div>
+    <a href="https://docs.magicthegathering.io/">Source</a>
+    <script src="Mtg.js"></script>
+</body>
+</html>
