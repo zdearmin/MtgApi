@@ -2,26 +2,48 @@ body {
     font-family: Arial, Helvetica, sans-serif
 }
 
+#logo {
+    display: block;
+    margin: 1rem auto;
+    max-width: 100%;
+    box-shadow: 1px 1px 2px 2px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.container {
+    text-align: center;
+}
+
+img, h2:hover {
+    cursor: pointer;
+}
+
+h2 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cardContainer {
+    display: inline-block;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
 #set-container {
     border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
     width: 50%;
     height: 10px;
     padding: 10px;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 1em;
 }
 
-#card-container {
-    width: fit-content;
-    display: inline-block;
-    padding: 1em;
-}
-
-#card-container:hover {
+#set-container:hover {
+    background-color: #C93814;
     cursor: pointer;
-}
-
-#card-name {
-    text-align: center;
 }
