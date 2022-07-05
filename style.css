@@ -10,18 +10,28 @@ body {
     border-radius: 10px 10px 10px 10px;
 }
 
+.topNav {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50%;
+}
+
+#search {
+    border-radius: 5px 5px 5px 5px;
+}
+
 .container {
     text-align: center;
 }
 
-img, h2:hover {
+#searchButton, img, h2:hover {
     cursor: pointer;
 }
 
-h2 {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+#searchButton:hover {
+    color: black;
+    opacity: 60%;
 }
 
 .cardContainer {
@@ -32,8 +42,11 @@ h2 {
 
 #set-container {
     border: 1px solid black;
+    border-radius: 10px 10px 10px 10px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
     width: 50%;
     height: 10px;
     padding: 10px;
@@ -45,5 +58,10 @@ h2 {
 
 #set-container:hover {
     background-color: #C93814;
+    opacity: 75%;
     cursor: pointer;
+}
+
+#sourceAPI {
+    text-decoration: none;
 }

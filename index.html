@@ -4,12 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="Mtg.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
     <title>Magic: The Gathering</title>
 </head>
 <body>
     <img src="./logo.jpg" id="logo">
+    <div class="topNav">
+        <input id="search" type="text" placeholder="Search Cards...">
+        <button id="searchButton">GO</button>
+        <input id="search" type="text" placeholder="Search Sets...">
+        <button id="searchButton">GO</button>
+    </div>
     <div id="root"></div>
+    <footer class="bottomNav">
+        <a id="sourceAPI" href="https://docs.magicthegathering.io/">Magic: The Gathering API</a>
+    </footer>
     <script src="Mtg.js"></script>
 </body>
 </html>

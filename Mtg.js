@@ -3,11 +3,10 @@ const api = document.getElementById('root')
 const container = document.createElement('div')
 container.setAttribute('class', 'container')
 
-api.appendChild(logo)
 api.appendChild(container)
 
 function displayCards() {
-    fetch(`https://api.magicthegathering.io/v1/cards?page=1&pageSize=100`)
+    fetch(`https://api.magicthegathering.io/v1/cards?page=1&pageSize=50`)
         .then(response => response.json())
         .then(data => {
             data.cards.forEach(cards => {
@@ -41,12 +40,11 @@ function displaySets() {
                 setName.textContent = set.name
 
                 setDiv.append(setName)
-
                 container.appendChild(setDiv)
             });
         });
 }
 
-displayCards();
-// displaySets();
+// displayCards();
+displaySets();
 
